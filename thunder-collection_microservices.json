@@ -1,0 +1,293 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "microservices",
+    "collectionId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+    "dateExported": "2024-08-06T09:38:49.334Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "e03f9308-624f-47c9-8050-b82497cf1ba2",
+            "name": "customer",
+            "containerId": "",
+            "created": "2024-08-06T09:04:56.245Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9545f989-15a7-4913-9d4d-8261cd57a5aa",
+            "name": "product",
+            "containerId": "",
+            "created": "2024-08-06T09:05:12.885Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "87789480-2f9a-4df0-920d-95834dd3de56",
+            "name": "shopping",
+            "containerId": "",
+            "created": "2024-08-06T09:05:26.471Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "5dc85115-16a9-4296-91c0-0598a40e22bf",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "e03f9308-624f-47c9-8050-b82497cf1ba2",
+            "name": "Signup",
+            "url": "/customer/signup",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-08-06T09:06:13.323Z",
+            "modified": "2024-08-06T09:07:11.394Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"sumit\",\n  \"password\":\"123\",\n  \"phone\":\"9876543201\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "aa11b5f5-1497-48bb-9fa5-f908b5c36493",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "e03f9308-624f-47c9-8050-b82497cf1ba2",
+            "name": "Login",
+            "url": "/customer/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-08-06T09:07:19.949Z",
+            "modified": "2024-08-06T09:07:42.725Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"sumit\",\n  \"password\":\"123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2c00c1fc-2d27-4d51-97f9-9f9eb845538a",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "9545f989-15a7-4913-9d4d-8261cd57a5aa",
+            "name": "Create a product",
+            "url": "/create",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-08-06T09:07:57.921Z",
+            "modified": "2024-08-06T09:28:50.589Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\":\"Olive Oil2\",\n    \"desc\":\"great Quality of Oil2\",\n    \"type\":\"oils\",\n    \"banner\":\"http://codergogoi.com/youtube/images/oliveoil.jpg\",\n    \"unit\":1,\n    \"price\":400, \n    \"available\":true,\n    \"suplier\":\"Golden seed firming\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cb6d5c92-06a0-470a-b290-8a22eadd78de",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "9545f989-15a7-4913-9d4d-8261cd57a5aa",
+            "name": "Get product by type",
+            "url": "/category/oils",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-08-06T09:09:13.142Z",
+            "modified": "2024-08-06T09:10:06.362Z",
+            "headers": []
+        },
+        {
+            "_id": "9c71c0af-6305-495c-9a33-2862338ffaf9",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "9545f989-15a7-4913-9d4d-8261cd57a5aa",
+            "name": "Get by ID",
+            "url": "/66b1e70d852e7184852cc462",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-08-06T09:10:38.535Z",
+            "modified": "2024-08-06T09:11:51.142Z",
+            "headers": []
+        },
+        {
+            "_id": "319e1bd4-c28b-4711-9a75-c4855bdbe96c",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "9545f989-15a7-4913-9d4d-8261cd57a5aa",
+            "name": "Get by IDs",
+            "url": "",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-08-06T09:14:21.315Z",
+            "modified": "2024-08-06T09:14:21.315Z",
+            "headers": []
+        },
+        {
+            "_id": "53c27aa2-c4eb-4968-8907-c7c5d7766d08",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "9545f989-15a7-4913-9d4d-8261cd57a5aa",
+            "name": "Add to wishlist",
+            "url": "/wishlist",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-08-06T09:15:31.645Z",
+            "modified": "2024-08-06T09:16:32.380Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"_id\":\"<productID>\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "358c1ed8-1764-4004-a05b-82cd534df2f3",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "9545f989-15a7-4913-9d4d-8261cd57a5aa",
+            "name": "Remove from wishlist",
+            "url": "/wishlist/<productId>",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-08-06T09:16:59.881Z",
+            "modified": "2024-08-06T09:17:27.693Z",
+            "headers": []
+        },
+        {
+            "_id": "d90c6fb6-9691-48ec-bbc4-7fbcd3231cf2",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "9545f989-15a7-4913-9d4d-8261cd57a5aa",
+            "name": "Add to cart",
+            "url": "/cart",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-08-06T09:19:28.629Z",
+            "modified": "2024-08-06T09:20:41.892Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"_id\":\"66b1e70d852e7184852cc462\",\n  \"qty\":1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f1b32e75-f50a-44af-96bb-0743be326058",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "9545f989-15a7-4913-9d4d-8261cd57a5aa",
+            "name": "Remove from cart",
+            "url": "/cart/<productId>",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2024-08-06T09:21:02.871Z",
+            "modified": "2024-08-06T09:21:33.035Z",
+            "headers": []
+        },
+        {
+            "_id": "13dc2a12-ca1e-48d4-9f7e-d2cbbc6e1990",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "9545f989-15a7-4913-9d4d-8261cd57a5aa",
+            "name": "Get all products",
+            "url": "/",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-08-06T09:22:11.131Z",
+            "modified": "2024-08-06T09:22:19.228Z",
+            "headers": []
+        },
+        {
+            "_id": "ac727d80-fe88-47a6-addb-929934989820",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "87789480-2f9a-4df0-920d-95834dd3de56",
+            "name": "Place order",
+            "url": "/shopping/order",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-08-06T09:26:54.462Z",
+            "modified": "2024-08-06T09:30:23.242Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"txnNumber\":7263\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "be29ab5b-4b46-4341-a7d1-5bf2b30b5cd4",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "87789480-2f9a-4df0-920d-95834dd3de56",
+            "name": "Get placed orders",
+            "url": "/shopping/orders",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-08-06T09:31:04.336Z",
+            "modified": "2024-08-06T09:31:16.668Z",
+            "headers": []
+        },
+        {
+            "_id": "414a64e1-d522-4d31-8271-4f85ec73ab66",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "87789480-2f9a-4df0-920d-95834dd3de56",
+            "name": "Get user cart",
+            "url": "/shopping/cart",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-08-06T09:32:02.006Z",
+            "modified": "2024-08-06T09:32:12.066Z",
+            "headers": []
+        },
+        {
+            "_id": "979025ce-9c6d-4fec-a4fb-f0f3b3afea0c",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "e03f9308-624f-47c9-8050-b82497cf1ba2",
+            "name": "Add address",
+            "url": "/customer/address",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2024-08-06T09:33:11.620Z",
+            "modified": "2024-08-06T09:34:53.674Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"street\":\"G. C. R. C Ghat Road\",\n  \"postalCode\":\"71102\",\n  \"city\":\"Kolkata\",\n  \"country\":\"India\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2720b03b-bf5a-4ab4-a513-d5b0be557ddd",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "e03f9308-624f-47c9-8050-b82497cf1ba2",
+            "name": "Get profile info",
+            "url": "/customer/profile",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-08-06T09:35:16.410Z",
+            "modified": "2024-08-06T09:35:26.910Z",
+            "headers": []
+        },
+        {
+            "_id": "7756be76-1bb7-4e83-8d04-07dff82a2f6d",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "e03f9308-624f-47c9-8050-b82497cf1ba2",
+            "name": "Get shopping details",
+            "url": "/customer/shoping-details",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2024-08-06T09:36:52.750Z",
+            "modified": "2024-08-06T09:37:01.293Z",
+            "headers": []
+        },
+        {
+            "_id": "8c1dbdb4-d1bc-4c29-bc49-3997372f6424",
+            "colId": "92cb3fe0-b02a-4071-9011-c900325dcea8",
+            "containerId": "e03f9308-624f-47c9-8050-b82497cf1ba2",
+            "name": "Get wishlist",
+            "url": "/customer/wishlist",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2024-08-06T09:38:09.767Z",
+            "modified": "2024-08-06T09:38:24.854Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhamphZEBnbWFpbC5jb20iLCJfaWQiOiI2NmIxZTRmNTA0MDJhZTUxOWI4MmI3ZDEiLCJpYXQiOjE3MjI5MzQ1NTIsImV4cCI6MTcyMzAyMDk1Mn0.UVED3e9j7aOxQrc9MfDulPtBTx1cOGnmulQ9hdmVMeA"
+        },
+        "options": {
+            "baseUrl": "http://localhost:8000"
+        }
+    },
+    "ref": "qltsDcrzqz4aYKL5DtPp9NGoVUZXeI6gTnE1mp6WuPB1Li-EbFUCwxHzdwMbswYWc5FV95vi06mjNsy6dHC9gA"
+}

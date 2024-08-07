@@ -1,6 +1,6 @@
 # Microservices in Node.Js & MongoDB
 I have deployed the dockerized API services on Render
-Base URI:- [gateway uri](https://shopping-gateway.onrender.com)
+Base URI:- [https://shopping-gateway.onrender.com](https://shopping-gateway.onrender.com)
 
 ### Customer service endpoints
 Description | Endpoints | Payload

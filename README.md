@@ -1,9 +1,5 @@
 # Microservices in Node.Js & MongoDB
 I have deployed the dockerized API services on Render
-
-
-## Design pattern
-The following design pattern is being followed in each of the services.
 Base URI:- [gateway uri](https://shopping-gateway.onrender.com)
 
 ### Customer service endpoints
@@ -35,7 +31,8 @@ Place the order | POST /shopping/order | {txnNumber:number}
 Get placed orders | GET /shopping/orders | {}
 Get user's cart | GET /shopping/cart | {}
 
-
+## Design pattern
+The following design pattern is being followed in each of the services.
 ![design pattern](https://github.com/SajjadMazhar/Shopping_system-microservice-architecture/blob/master/flowcharts/dp.png?raw=true)
 
 ## Resources used in development so far 

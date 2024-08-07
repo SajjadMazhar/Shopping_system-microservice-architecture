@@ -15,13 +15,13 @@ Get wishlist | GET /customer/wishlist | {}
 ### Product service endpoints
 Description | Endpoints | Payload
 --|--|--
-Create a product | /create | {name:string, desc:string, type:string, banner:string, unit:number, available:boolean, suplier:string}
-Get products by category | /category/<type> | {}
-Get product by ID | /<id> | {}
+Create a product | POST /create | {name:string, desc:string, type:string, banner:string, unit:number, available:boolean, suplier:string}
+Get products by category | GET /category/:type | {}
+Get product by ID | GET /:id | {}
 Add to wishlist | PUT /wishlist | {_id:string}
-Remove from wishlist | DELETE /wishlist/<id> | {}
+Remove from wishlist | DELETE /wishlist/:id | {}
 Add to Cart | PUT /cart | {_id:string, qty:number}
-Remove from Cart | DELETE /cart/<id> | {}
+Remove from Cart | DELETE /cart/:id | {}
 Get all products | GET / | {}
 
 ### Shopping service endpoints
